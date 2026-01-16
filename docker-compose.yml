@@ -9,3 +9,8 @@ services:
     working_dir: /app
     environment:
       - CHOKIDAR_USEPOLLING=true
+    networks:      
+      - bank-net  
+networks:  
+  bank-net:      
+    external: true

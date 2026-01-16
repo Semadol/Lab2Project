@@ -109,6 +109,11 @@ export default function RegisterPage(){
           <div className="row justify-content-center">
             <div className="col-lg-8">
               <form onSubmit={handleSubmit} className="row g-3" noValidate>
+                {apiError && (
+                  <div className="col-12">
+                    <div className="alert alert-danger">{apiError}</div>
+                  </div>
+                )}
             <div className="col-md-6">
               <label className="form-label">Nombres</label>
               <input name="first_name" value={form.first_name} onChange={handleChange} required className={`form-control ${errors.first_name ? 'is-invalid' : ''}`} />

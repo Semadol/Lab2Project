@@ -1,0 +1,17 @@
+{
+  "name": "Bank Web",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "web",
+  "workspaceFolder": "/app",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "prettier.prettier-vscode",
+        "dsznajder.es7-react-js-snippets"
+      ]
+    }
+  },
+  "forwardPorts": [5173],
+  "remoteUser": "node"
+}

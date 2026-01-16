@@ -9,7 +9,7 @@ export default function Hero() {
           <p className="lead">Soluciones financieras pensadas para estudiantes y personal universitario: cuentas sin comisiones, tarjetas con beneficios y préstamos educativos.</p>
           <div>
             <a href="/register" className="btn btn-primary btn-lg me-2">Abrir cuenta</a>
-            <a href="features" className="btn btn-outline-secondary btn-lg">Conoce más</a>
+            <a href="/info" className="btn btn-outline-secondary btn-lg">Conoce más</a>
           </div>
         </div>
         <div className="flex-fill text-center">

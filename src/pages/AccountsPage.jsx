@@ -56,41 +56,13 @@ export default function AccountsPage() {
     }
   }
 
-  async function createAccount() {
-    if(!window.confirm('¿Estás seguro de que quieres abrir una nueva cuenta?')) return
 
-    try {
-      const token = localStorage.getItem('token')
-      const response = await fetch('/v1/client/account', {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({})
-      })
-      
-      const data = await response.json()
-
-      if (response.ok) {
-        alert('Cuenta creada exitosamente')
-        fetchAccounts() 
-      } else {
-        alert(data.message || 'Error al crear cuenta')
-      }
-    } catch (err) {
-      console.error(err)
-      alert('Error de conexión al crear cuenta')
-    }
-  }
 
   return (
     <div className="container py-5">
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h2>Mis Cuentas</h2>
-        <button className="btn btn-primary" onClick={createAccount}>
-          Abrir nueva cuenta
-        </button>
+
       </div>
 
       {loading ? (
