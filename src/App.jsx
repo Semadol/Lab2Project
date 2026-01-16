@@ -15,7 +15,7 @@ import TransferPage from './pages/TransferPage'
 import InformationPage from './pages/InformationPage'
 import AccountsPage from './pages/AccountsPage'
 import MovementsPage from './pages/MovementsPage'
-
+import ContactsPage from './pages/ContactsPage'
 
 function AppRoutes(){
   return (
@@ -35,6 +35,7 @@ function AppRoutes(){
       <Route path='/info' element={<InformationPage />} />
       <Route path="/accounts" element={<AccountsPage />} />
       <Route path="/movements" element={<MovementsPage />} />
+      <Route path="/contact" element={<ContactsPage/> } />
     </Routes>
   )
 }

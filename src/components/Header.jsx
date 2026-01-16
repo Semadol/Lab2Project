@@ -12,7 +12,7 @@ export default function Header() {
     <header className="bg-white shadow-sm">
       <nav className="navbar navbar-expand-lg container">
         <Link className="navbar-brand d-flex align-items-center" to="/">
-          <img src="/assets/logo-no-background.png" alt="logo" className="logo me-2" />
+          <img src="/assets/logo-no-background.png" alt="logo" className="logo" />
         </Link>
         
         <div className="collapse navbar-collapse" id="navMenu">
